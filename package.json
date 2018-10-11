@@ -1,0 +1,24 @@
+{
+  "name": "hello-webpack-4",
+  "version": "1.0.0",
+  "description": "轻松学 Webpack 4",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hfpp2012/hello-webpack-4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hfpp2012/hello-webpack-4/issues"
+  },
+  "homepage": "https://github.com/hfpp2012/hello-webpack-4#readme",
+  "devDependencies": {
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}
