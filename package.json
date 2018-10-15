@@ -4,7 +4,7 @@
   "description": "轻松学 Webpack 4",
   "main": "index.js",
   "scripts": {
-    "dev": "npx webpack --mode=development"
+    "dev": "npx webpack"
   },
   "repository": {
     "type": "git",
