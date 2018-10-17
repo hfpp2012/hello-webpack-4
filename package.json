@@ -19,6 +19,7 @@
   "homepage": "https://github.com/hfpp2012/hello-webpack-4#readme",
   "devDependencies": {
     "@babel/core": "^7.1.2",
+    "@babel/plugin-transform-arrow-functions": "^7.0.0",
     "babel-loader": "^8.0.4",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
