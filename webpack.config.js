@@ -18,6 +18,10 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           // options: {
+          //   presets: [['@babel/preset-env', { "debug": true }]],
+          //   plugins: [["@babel/plugin-proposal-decorators", { "decoratorsBeforeExport": true }]]
+          // }
+          // options: {
           //   plugins: [require('@babel/plugin-transform-arrow-functions')]
           // }
         }
