@@ -1,22 +1,3 @@
-const greet = () => {
-  console.log('rails365');
-}
+import person from './lib';
 
-greet();
-
-class Test {
-  constructor(name) {
-    this.name = name;
-  }
-
-  logger () {
-    console.log("Hello", this.name);
-  }
-}
-
-@annotation
-class MyClass { }
-
-function annotation(target) {
-   target.annotated = true;
-}
+console.log(person);

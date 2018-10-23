@@ -6,6 +6,7 @@ module.exports = {
     app: './src/index.js',
     hello: './src/hello.js'
   },
+  devtool: false,
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: "[name].bundle.js"
