@@ -1,4 +1,4 @@
 {
-  "presets": [['@babel/preset-env', { "debug": true }]],
+  "presets": [['@babel/preset-env', { "debug": true, "useBuiltIns": "usage" }]],
   "plugins": [["@babel/plugin-proposal-decorators", { "decoratorsBeforeExport": true }]]
 }
