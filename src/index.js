@@ -1,4 +1,3 @@
-import '@babel/polyfill'
 Object.assign({})
 
 Array.from([1,2,3])
