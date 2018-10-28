@@ -1,5 +1,12 @@
 {
-  "presets": [['@babel/preset-env', { "debug": true }]],
+  "presets": [
+    [
+      '@babel/preset-env', { "debug": true }
+    ],
+    [
+      "@babel/preset-react", { "development": true }
+    ]
+  ],
   "plugins": [
     [
       "@babel/plugin-proposal-decorators", { "decoratorsBeforeExport": true }
