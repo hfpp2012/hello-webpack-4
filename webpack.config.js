@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   // entry: "./src/index.js",
@@ -10,7 +11,7 @@ module.exports = {
   devtool: false,
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: "[name].bundle.js"
+    filename: "[name]-[hash].bundle.js"
   },
   module: {
     rules: [
@@ -30,5 +31,8 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new HtmlWebpackPlugin()
+  ],
   mode: 'development'
 }
