@@ -28,6 +28,10 @@ module.exports = {
           //   plugins: [require('@babel/plugin-transform-arrow-functions')]
           // }
         }
+      },
+      {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
       }
     ]
   },
