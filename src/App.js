@@ -5,7 +5,7 @@ import './index.css';
 const App = () => {
   return (
     <div>
-      <p>React here! Hello</p>
+      <p>React here! Hello, rails365</p>
     </div>
   )
 }

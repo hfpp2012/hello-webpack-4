@@ -1,7 +1,12 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const devMode = process.env.NODE_ENV !== 'production';
+
+let pathsToClean = [
+  'dist'
+]
 
 module.exports = {
   // entry: "./src/index.js",
@@ -74,7 +79,8 @@ module.exports = {
       // both options are optional
       filename: devMode ? '[name].css' : '[name].[hash].css',
       chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
-    })
+    }),
+    new CleanWebpackPlugin(pathsToClean)
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
