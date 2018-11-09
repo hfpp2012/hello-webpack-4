@@ -2,3 +2,8 @@ body {
   line-height: 2;
   color: blue;
 }
+
+div.image {
+  height: 600px;
+  background: url("./logo.png") no-repeat;
+}

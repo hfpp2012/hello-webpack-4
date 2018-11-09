@@ -18,7 +18,7 @@ module.exports = {
   devtool: false,
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: "[name]-[hash].bundle.js"
+    filename: "js/[name]-[hash].bundle.js"
   },
   module: {
     rules: [
@@ -58,6 +58,18 @@ module.exports = {
           'css-loader', // translates CSS into CommonJS
           'less-loader' // compiles Less to CSS
         ]
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'images/'
+            }
+          }
+        ]
       }
     ]
   },
@@ -77,8 +89,8 @@ module.exports = {
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
-      filename: devMode ? '[name].css' : '[name].[hash].css',
-      chunkFilename: devMode ? '[id].css' : '[id].[hash].css',
+      filename: devMode ? 'css/[name].css' : 'css/[name].[hash].css',
+      chunkFilename: devMode ? 'css/[id].css' : 'css/[id].[hash].css',
     }),
     new CleanWebpackPlugin(pathsToClean)
   ],
