@@ -1,10 +1,10 @@
 {
   "presets": [
     [
-      '@babel/preset-env', { "debug": true }
+      '@babel/preset-env', { "debug": false }
     ],
     [
-      "@babel/preset-react", { "development": true }
+      "@babel/preset-react", { "development": false }
     ]
   ],
   "plugins": [
