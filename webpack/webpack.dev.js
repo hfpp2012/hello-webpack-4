@@ -45,7 +45,7 @@ module.exports = merge(common, {
     }),
     new CleanWebpackPlugin(pathsToClean)
   ],
-  devtool: false,
+  devtool: "eval-source-map",
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     compress: true,

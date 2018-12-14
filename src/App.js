@@ -9,6 +9,9 @@ const App = () => {
       <p>React here! Hello, rails365</p>
       <img src={ logo } width={ 300 } />
       <div className="image"></div>
+      {
+        "ssss".map()
+      }
     </div>
   )
 }
