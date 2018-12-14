@@ -13,14 +13,28 @@ module.exports = merge(common, {
       {
         test: /\.css$/,
         use: [
-          MiniCssExtractPlugin.loader,
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              // you can specify a publicPath here
+              // by default it use publicPath in webpackOptions.output
+              publicPath: '../'
+            },
+          },
           'css-loader'
         ]
       },
       {
         test: /\.(scss|sass)$/,
         use: [
-          MiniCssExtractPlugin.loader, // creates style nodes from JS strings
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              // you can specify a publicPath here
+              // by default it use publicPath in webpackOptions.output
+              publicPath: '../'
+            },
+          }, // creates style nodes from JS strings
           "css-loader", // translates CSS into CommonJS
           "sass-loader" // compiles Sass to CSS, using Node Sass by default
         ]
@@ -28,7 +42,14 @@ module.exports = merge(common, {
       {
         test: /\.less$/,
         use: [
-          MiniCssExtractPlugin.loader, // creates style nodes from JS strings
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              // you can specify a publicPath here
+              // by default it use publicPath in webpackOptions.output
+              publicPath: '../'
+            },
+          }, // creates style nodes from JS strings
           'css-loader', // translates CSS into CommonJS
           'less-loader' // compiles Less to CSS
         ]

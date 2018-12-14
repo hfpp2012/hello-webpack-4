@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './index.scss';
 import logo from './logo.png';
 
 const App = () => {
@@ -9,9 +9,6 @@ const App = () => {
       <p>React here! Hello, rails365</p>
       <img src={ logo } width={ 300 } />
       <div className="image"></div>
-      {
-        "ssss".map()
-      }
     </div>
   )
 }
